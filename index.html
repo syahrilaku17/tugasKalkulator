@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Kalkulator Sederhana</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body onLoad="waktu()">
+    <div id="wraper">
+        <form name="fform" id="fform" onclick="play()">
+            <table> 
+                <tr>
+                    <td colspan="4"><input type="text" name="result" id="result" readonly></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="tombol" onclick="clean()"> C </button></td>
+                    <td><button type="button" class="tombol" onclick="del()">  Del </button> </td>
+                    <td colspan="2"><button type="button" class="tombol" onclick="equal()"onclick="validasi()">  = </button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="tombol" onclick="insert(1)"> 1 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert(2)"> 2 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert(3)"> 3 </button></td>   
+                    <td><button type="button" class="tombol" onclick="insert('+')"> + </button></td> 
+                </tr>
+                <tr>
+                    <td><button type="button" class="tombol" onclick="insert(4)"> 4 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert(5)"> 5 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert(6)"> 6 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert('-')"> - </button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="tombol" onclick="insert(7)"> 7 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert(8)"> 8 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert(9)"> 9 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert('*')"> x </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" class="tombol" onclick="insert(0)"> 0 </button></td>
+                    <td><button type="button" class="tombol" onclick="insert('.')"> . </button> </td>
+                    <td> <button type="button" class="tombol" onclick="insert('/')"> / </button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+  <audio id="audio" src="tit.wav" ></audio>
+
+    </body>
+</html>
